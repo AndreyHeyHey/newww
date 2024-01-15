@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>
+        Языки программирования
+    </title>
+
+        <style>
+            .primer1 {
+                line-height: 40px;
+            }
+
+            .rectangle {
+                width: 100%;
+                height: 100px;
+                border: 0px solid;
+                margin: auto;
+                background: #0a0f2b;
+            }
+
+            .text_center_middle {
+                color: #ffffff;
+                text-align: center;
+                line-height: 50px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            td {
+                border: 1px solid grey;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+        </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/юзер/Desktop/ВКН/html/style.css" />
+    <div style="width: 1900px;" allign="justify">
+        <div style="width: 850px; height: 100px; margin: 10px auto;">
+            <font size="7" color="white" face="Arial" class="primer1">
+                <p> <b>Зарплаты:</b></p>
+            </font>
+            <img src="11.jpg" width="800" height="600" style="border-radius:0px;">
+            <font size="5" color="white" face="Arial" class="primer1">
+                <p>
+                    <b>
+                        По данным исследования Хабр Карьеры в первом полугодии 2023 года в среднем на 19% выросли зарплаты разработчиков во всех языках программирования кроме Golang ― осталась прежней и Delphi ― снизилась на 23%.
+                    </b>
+            </font>
+            </p>    
+            
+            <br><br>
+                <script>
+                    var dob = document.getElementById('dateofbirth');
+
+                    function check()
+                    {
+                        alert(`${y} years and ${m} months`);
+                        var today = new Date(); 
+                        var birthDate = new Date(dob.value);
+                        var y = today.getFullYear() - birthDate.getFullYear();
+                        var m = today.getMonth() - birthDate.getMonth();
+                        
+                    }
+                </script>
+                <input type="date" value="" id="dateofbirth" name="time" />
+                <button onclick="check();">Check</button>
+            
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="rectangle text_center_middle">
+    </div>
+</body>
+</html>
